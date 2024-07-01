@@ -12,3 +12,17 @@ from sklearn import metrics
   
 import warnings 
 warnings.filterwarnings('ignore')
+
+pip install matplotlib
+
+import os
+import pandas as pd 
+abs_path = os.path.dirname('TSLA.csv')
+print( 'path is',os.path )
+df = pd.read_csv('C:\\Users\\alagu\\Downloads\\TSLA.csv')
+
+df.shape
+
+df.describe()
+
+df.info()
