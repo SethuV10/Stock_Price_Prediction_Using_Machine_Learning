@@ -42,5 +42,9 @@ df.head()
 
 import pandas as pd 
 df = pd.read_csv('C:\\Users\\alagu\\Downloads\\TSLA.csv')
+df[df['Close'] == df['Adj Close']].shape
+
+import pandas as pd 
+df = pd.read_csv('C:\\Users\\alagu\\Downloads\\TSLA.csv')
 df = df.drop(['Adj Close'], axis=1)
 df.isnull().sum()
